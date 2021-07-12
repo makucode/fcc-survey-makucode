@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form - makucode</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="title">makucode Survey Form</h1>
+        <p id="description">Help us improve our service by taking this quick survey</p>
+    </header>
+
+    <main id="main">
+        <form id="survey-form">
+            <label for="name" id="name-label">
+                Name <br>
+                <input id="name" type="text" placeholder="Enter your name" required><br>
+            </label>
+            <label for="email" id="email-label">
+                Email <br>
+                <input id="email" type="email" placeholder="Enter your Email" required><br>
+            </label>
+            <label for="number" id="number-label">
+                Age (Optional) <br>
+                <input id="number" type="number" placeholder="Age" min="12" max="120"><br>
+            </label>
+            <label for="dropdown" id="dropdown-label">
+                Which option best describes your current role? <br>
+                <select id="dropdown" name="role">
+                    <option disabled="" selected="" value="">Select your role</option>
+                    <option value="student">Student</option>
+                    <option value="full-time">Full Time Job</option>
+                    <option value="part-time">Part Time Job</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="private">Prefer to keep private</option>
+                    <option value="other">Other</option>
+                </select><br>
+            </label>
+            <label>Would you recommend our service to a friend or family member?</label>
+            <label class="radio-label" for="radio-1">
+                <input type="radio" name="radio" id="radio-1" value="would-recommend"> Definitely 
+            </label>
+            <label class="radio-label" for="radio-2">
+                <input type="radio" name="radio" id="radio-2" value="unsure-recommend"> Not sure
+            </label>
+            <label class="radio-label" for="radio-3">
+                <input type="radio" name="radio" id="radio-3" value="would-not-recommend"> No
+            </label>
+            <label for="textarea" id="textarea-label">
+                Comments or suggestions <br>
+                <textarea rows="9"></textarea><br>
+            </label>
+            <label class="checkbox-label" for="newsletter">
+                <input id="newsletter" type="checkbox" value="newsletter-consent"> I would like to receive the monthly makucode Newsletter
+            </label>
+            <label class="checkbox-label" for="privacy-policy">
+                <input id="privacy-policy" type="checkbox" value="privacy-consent"> I have read and accept the <a href="#">terms and conditions</a> and <a href="#">privacy policy</a>
+            </label><br>
+            <button id="submit" type="submit">Submit</button><br>
+        </form>
+    </main>
+
+    <footer>
+        <span class="credits">© 2021 <a href="mailto:makucode@gmail.com">Maximilian Friedrich</a></span>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image: url("assets/photo-1444724334165-e7050f2229a1.jpg");
+    background-position: center;
+    background-attachment: fixed; 
+
+    font-family: 'Roboto', sans-serif;
+
+    color: #1a1a1a;
+
+    font-weight: 300;
+}
+
+a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: solid 1px #1a1a1a;
+}
+
+header {
+    margin-left: 50%;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 530px;
+}
+
+header p {
+    font-style: italic;
+}
+
+#main {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 530px;
+
+    background: #e5e5e5;
+    border-radius: 18px;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    color: #1a1a1a;
+}
+
+label {
+    margin-top: 1rem;
+    display: block;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+input[type="number"], input[type="email"], input[type="text"] {
+    width: 100%;
+    height: 1.5rem;
+    font-size: 1rem;
+}
+
+input, select {
+    margin-top: 0.7rem;
+    font-weight: 300;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-top: 0.7rem;
+    width: 100%;
+}
+
+.radio-label {
+    margin-top: 0.3rem !important;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    font-weight: 300;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    padding: 0.7rem 3rem;
+    border-radius: 0;
+    border: solid 1px #1a1a1a;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    color: #e5e5e5;
+    background-color: #1a1a1a;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 500;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 767px) {
+    header, #main {
+        width: 76vw;
+    } 
+}
